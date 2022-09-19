@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      input:focus {
+        color: magenta;
+        font-family: 'Courier New'
+      }
+      input:disabled {
+        display: none;
+      }
+      input:required {
+        border: 2px solid red;
+      }
+      .required:before{
+        content:"REQUIRED ";
+        color: red;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Ordering Menu</h1>
+    <div>
+      <h1>Breakfast</h1>
+      <ul>
+        <li>Pancake</li>
+        <li>Hash brown</li>
+        <li>Eggs</li>
+        <li>Sausage</li>
+      </ul>
+      <ol>
+        <li>Pancake</li>
+        <li>Hash brown</li>
+        <li>Eggs</li>
+      </ol>
+    </div>
+    <h1>Form</h1>
+    <form><label class="required">First Name:</label> <span><input type="text"/></form>
+    <form>Last Name: <input type="text" /></form>
+    <form>Age: <input type="text" /></form>
+  </body>
+</html>
